@@ -69,7 +69,7 @@ See [here](https://www.instructables.com/Getting-Started-With-Esp-8266-Esp-01-Wi
 
 After load the sketch, the circuit can be assembled according to the image below:
 
-![Circuit](https://github.com/lucasrochagit/enviriot-envt-monitor/tree/main/images/circuit.png)
+![Circuit](https://github.com/lucasrochagit/iot-env-monitor/blob/main/images/circuit.png)
 
 
 ## Built With
