@@ -71,6 +71,29 @@ After load the sketch, the circuit can be assembled according to the image below
 
 ![Circuit](https://github.com/lucasrochagit/iot-env-monitor/blob/main/images/circuit.png)
 
+### After Works
+
+If everything works as expected, the application will follow a routine to update the main screen every 5 seconds. Each time the screen is updated, an HTTP request is made to the API, to retrieve the last temperature and humidity measurement sent by the ESP01 circuit. ESP01, in turn, will send to API through an HTTP request a new collection of the temperature and humidity of the environment in which the circuit is installed, every 30 seconds.
+
+As the app has been implemented, there are some possible situations. Are they:
+
+1. If no API measurement is returned, the app will display two circular percentage widgets, with no padding, and with the current date and time (UTC -03: 00);
+
+2. If a measurement is returned, there are three ways to display the measurement values ​​in the app:
+
+* When the temperature is between 00 ° C and 29.9 ° C or the relative humidity is between 50% and 99%, the fill color of their respective widgets will be blue.
+
+![Screen_One](https://github.com/lucasrochagit/iot-env-monitor/blob/main/images/screen_one.png)
+
+* When the temperature is between 30 ° C and 39.9 ° C or the relative humidity is between 31% and 49%, the fill color of their respective widgets will be yellow.
+
+![Screen_Two](https://github.com/lucasrochagit/iot-env-monitor/blob/main/images/screen_two.png)
+
+
+* When the temperature is between 40 ° C and 50 ° C or the relative humidity is between 0% and 30%, the fill color of their respective widgets will be red.
+
+![Screen_Three](https://github.com/lucasrochagit/iot-env-monitor/blob/main/images/screen_three.png)
+
 
 ## Built With
 
