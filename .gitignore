@@ -102,3 +102,8 @@ dist
 
 # TernJS port file
 .tern-port
+
+
+##### ESP01 SECRETS
+
+/esp01/arduino_secrets.h
